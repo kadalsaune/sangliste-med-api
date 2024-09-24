@@ -3,7 +3,11 @@ const searchInput = document.getElementById('search-input');
 const searchResults = document.getElementById('search-results');
 const favoriteSongsList = document.getElementById('favorite-songs');
 const favoriteAlbumCovers = document.getElementById('favorite-album-covers');
+const closeInfoBox = document.getElementById('closeInfoBox')
 
+closeInfoBox.onclick = (e) => {
+    e.target.parentElement.style.display = "none"
+}
 // Hent favorittsanger fra localStorage
 let favoriteSongs = JSON.parse(localStorage.getItem('favoriteSongs')) || [];
 console.log(favoriteSongs)
