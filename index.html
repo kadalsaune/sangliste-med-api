@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorittsanger</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex">
+
+    <div class="w-1/2 p-4">
+        <h1 class="text-2xl font-bold">Mine Favorittsanger</h1>
+        <div id="favorite-album-covers" class="flex flex-wrap mt-4"></div>
+        <ul id="favorite-songs" class="mt-4 list-disc"></ul>
+    </div>
+
+    <div class="w-1/2 p-4">
+        <h1 class="text-2xl font-bold">Søk etter Sanger</h1>
+        <input id="search-input" type="text" placeholder="Søk etter sang..." class="mt-2 p-2 border rounded w-full">
+        <button id="search-button" class="mt-2 p-2 bg-blue-500 text-white rounded">Søk</button>
+        <div id="search-results" class="mt-4"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
